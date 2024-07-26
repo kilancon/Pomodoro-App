@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/light_brown">
+
+    <ImageView
+        android:id="@+id/imgAva"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:src="@drawable/avatar2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="13dp"/>
+    <Button
+        android:id="@+id/btnSignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In | Sign Up"
+        android:textAllCaps="false"
+        android:textStyle=""
+        android:textSize="17dp"
+        android:textColor="@color/brown"
+        android:background="@color/transparent"
+        app:layout_constraintLeft_toRightOf="@+id/imgAva"
+        app:layout_constraintTop_toTopOf="@+id/imgAva"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAva"/>
+    <TextView
+        android:id="@+id/tvHi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi User1!"
+        android:textColor="@color/brown"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        app:layout_constraintTop_toTopOf="@+id/imgAva"
+        app:layout_constraintLeft_toRightOf="@+id/imgAva"
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/tvHi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay productive today!"
+        android:textColor="@color/brown2"
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvHi"
+        app:layout_constraintLeft_toLeftOf="@+id/tvHi"
+        android:layout_marginTop="7dp"
+        android:visibility="invisible"/>
+    <ImageView
+        android:layout_width="19dp"
+        android:layout_height="23dp"
+        android:src="@drawable/noti"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/tvTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tasks"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/brown"
+        app:layout_constraintLeft_toLeftOf="@+id/imgAva"
+        app:layout_constraintTop_toBottomOf="@+id/imgAva"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTasks"/>
+
+    <TextView
+        android:id="@+id/tvCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/brown"
+        app:layout_constraintLeft_toLeftOf="@+id/imgAva"
+        app:layout_constraintTop_toBottomOf="@+id/rvTasks"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCompletedTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCompleted"/>
+
+    <Button
+        android:id="@+id/btnNewTask"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="+ Add new task"
+        android:textColor="@color/brown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvCompletedTasks"
+        android:layout_marginTop="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

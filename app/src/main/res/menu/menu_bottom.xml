@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mTimer"
+        android:title="Timer"
+        android:icon="@drawable/ic_clock"
+        />
+    <item
+        android:id="@+id/mStat"
+        android:title="Stat"
+        android:icon="@drawable/ic_chart"
+        />
+    <item
+        android:id="@+id/mConfig"
+        android:title="Config"
+        android:icon="@drawable/ic_setting"
+        />
+    <item
+        android:id="@+id/mUser"
+        android:title="User"
+        android:icon="@drawable/ic_user"
+        />
+
+</menu>

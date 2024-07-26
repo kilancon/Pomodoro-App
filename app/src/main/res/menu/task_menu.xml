@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuSelect"
+        android:title="Select"/>
+    <item android:id="@+id/menuFinish"
+        android:title="Finish"/>
+    <item android:id="@+id/menuClear"
+        android:title="Clear"/>
+</menu>

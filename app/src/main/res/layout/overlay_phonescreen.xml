@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="Locking ..."
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvTimer2"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="It will return to normal at the end of the time"
+        android:textColor="#5F5F5F"
+        android:textSize="18dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tvTimer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="25:00"
+        android:textSize="40dp"
+        android:textColor="@color/brown"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
