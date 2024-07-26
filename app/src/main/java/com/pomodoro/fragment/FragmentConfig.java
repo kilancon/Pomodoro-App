@@ -20,8 +20,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.pomodoro.ChangeAppListActivity;
-import com.pomodoro.MainActivity;
+import com.pomodoro.activity.ChangeAppListActivity;
+import com.pomodoro.activity.MainActivity;
 import com.pomodoro.R;
 import com.pomodoro.model.AppInfo;
 

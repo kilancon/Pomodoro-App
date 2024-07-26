@@ -20,9 +20,9 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.progressindicator.CircularProgressIndicator;
-import com.pomodoro.MainActivity;
+import com.pomodoro.activity.MainActivity;
 import com.pomodoro.R;
-import com.pomodoro.TimerAT;
+import com.pomodoro.TimerTask;
 import com.pomodoro.dal.DatabaseHelper;
 import com.pomodoro.model.Task;
 import com.pomodoro.service.MyOverlayPhoneService;
@@ -40,7 +40,7 @@ public class FragmentTimer extends Fragment {
     private ImageButton btnSkip, btnCheck, btnClear;
     private int focustime, lbreak, sbreak;
     private Task task;
-    private TimerAT timerAT;
+    private TimerTask timerAT;
     public FragmentTimer() {
     }
 
@@ -136,15 +136,15 @@ public class FragmentTimer extends Fragment {
                             btnSkip.callOnClick();
                             break;
                         }
-                        timerAT = new TimerAT(mainActivity, focustime);
+                        timerAT = new TimerTask(mainActivity, focustime);
                         timerAT.execute();
                         break;
                     case SHORT_BREAK:
-                        timerAT = new TimerAT(mainActivity, sbreak);
+                        timerAT = new TimerTask(mainActivity, sbreak);
                         timerAT.execute();
                         break;
                     case LONG_BREAK:
-                        timerAT = new TimerAT(mainActivity, lbreak);
+                        timerAT = new TimerTask(mainActivity, lbreak);
                         timerAT.execute();
                         break;
                 }

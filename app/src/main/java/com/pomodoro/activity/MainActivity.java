@@ -1,21 +1,19 @@
-package com.pomodoro;
+package com.pomodoro.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import android.app.ActionBar;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Window;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.pomodoro.R;
 import com.pomodoro.adapter.MenuViewPagerAdapter;
 import com.pomodoro.dal.DatabaseHelper;
 import com.pomodoro.model.AppInfo;

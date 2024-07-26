@@ -1,9 +1,8 @@
-package com.pomodoro;
+package com.pomodoro.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -12,10 +11,11 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.pomodoro.R;
 import com.pomodoro.dal.DatabaseHelper;
 import com.pomodoro.model.Task;
 
-public class AddTask extends AppCompatActivity {
+public class AddTaskActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

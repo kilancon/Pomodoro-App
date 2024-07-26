@@ -10,16 +10,17 @@ import android.widget.TextView;
 
 
 import com.google.android.material.progressindicator.CircularProgressIndicator;
+import com.pomodoro.activity.MainActivity;
 import com.pomodoro.dal.DatabaseHelper;
 
-public class TimerAT extends AsyncTask<Void, Integer, Void> {
+public class TimerTask extends AsyncTask<Void, Integer, Void> {
     private MainActivity activity;
     private int timer, remainingSecond;
     private CircularProgressIndicator bar;
     private TextView tv;
     private MediaPlayer mediaPlayer;
 
-    public TimerAT(MainActivity activity, int timer) {
+    public TimerTask(MainActivity activity, int timer) {
         this.activity = activity;
         this.timer = timer;
         this.remainingSecond = activity.remainingSeconds;

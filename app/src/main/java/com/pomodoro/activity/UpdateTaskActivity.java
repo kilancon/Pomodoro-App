@@ -1,4 +1,4 @@
-package com.pomodoro;
+package com.pomodoro.activity;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,10 +14,11 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.pomodoro.R;
 import com.pomodoro.dal.DatabaseHelper;
 import com.pomodoro.model.Task;
 
-public class UpdateTask extends AppCompatActivity {
+public class UpdateTaskActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +61,7 @@ public class UpdateTask extends AppCompatActivity {
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder alert = new AlertDialog.Builder(UpdateTask.this);
+                AlertDialog.Builder alert = new AlertDialog.Builder(UpdateTaskActivity.this);
                 alert.setTitle("Delete task");
                 alert.setMessage("Are you sure you want to delete?");
                 alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {

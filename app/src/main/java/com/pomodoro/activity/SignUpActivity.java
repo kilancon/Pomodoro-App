@@ -1,4 +1,4 @@
-package com.pomodoro;
+package com.pomodoro.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.pomodoro.R;
 import com.pomodoro.dal.DatabaseHelper;
 import com.pomodoro.model.User;
 

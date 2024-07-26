@@ -4,20 +4,17 @@ package com.pomodoro.adapter;
 import android.content.Context;
 import android.graphics.Paint;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
-import com.pomodoro.MainActivity;
+import com.pomodoro.activity.MainActivity;
 import com.pomodoro.R;
 import com.pomodoro.dal.DatabaseHelper;
 import com.pomodoro.model.Task;

@@ -20,10 +20,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.pomodoro.AddTask;
-import com.pomodoro.LoginActivity;
+import com.pomodoro.activity.AddTaskActivity;
+import com.pomodoro.activity.LoginActivity;
 import com.pomodoro.R;
-import com.pomodoro.UpdateTask;
+import com.pomodoro.activity.UpdateTaskActivity;
 import com.pomodoro.adapter.TaskAdapter;
 import com.pomodoro.dal.DatabaseHelper;
 import com.pomodoro.model.Task;
@@ -91,7 +91,7 @@ public class FragmentUser extends Fragment implements TaskAdapter.TaskItemListen
         rv.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
         rv2.setAdapter(adapter2);
         rv2.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
-        Intent intentAdd = new Intent(getActivity(), AddTask.class);
+        Intent intentAdd = new Intent(getActivity(), AddTaskActivity.class);
         btnNewTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -136,7 +136,7 @@ public class FragmentUser extends Fragment implements TaskAdapter.TaskItemListen
     @Override
     public void onItemClick(View view, int pos) {
         Task task = adapter.getDs().get(pos);
-        Intent intentUpdate = new Intent(getActivity(), UpdateTask.class);
+        Intent intentUpdate = new Intent(getActivity(), UpdateTaskActivity.class);
         intentUpdate.putExtra("idTask", Integer.toString(task.getId()));
         intentUpdate.putExtra("nameTask", task.getName());
         intentUpdate.putExtra("estTask", Integer.toString(task.getEst()));

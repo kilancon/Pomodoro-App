@@ -1,4 +1,4 @@
-package com.pomodoro;
+package com.pomodoro.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -17,6 +17,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
+import com.pomodoro.R;
+import com.pomodoro.Utils;
 import com.pomodoro.adapter.AppBlockAdapter;
 import com.pomodoro.model.AppInfo;
 
